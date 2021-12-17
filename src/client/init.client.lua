@@ -1,0 +1,5 @@
+print("About to require index!")
+local index = require(script.index)
+print("About to run index!")
+index()
+print("Ran index!")
