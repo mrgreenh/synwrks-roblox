@@ -5,9 +5,10 @@ local Tree = Roact.Component:extend("Tree")
 
 function Tree:render()
 	return Roact.createElement("Part", {
-		Position = Vector3.new(-19, 0, -50),
-		Orientation = Vector3.new(0, 180, 0),
+		Position = self.props.Position,
+		Orientation = self.props.Orientation,
 		Size = Vector3.new(15, 90, 10),
+		Anchored = true,
 	}, {
 		Model = Roact.createElement("SpecialMesh", {
 			MeshId = "rbxassetid://8274039999",
